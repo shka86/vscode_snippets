@@ -1,0 +1,33 @@
+{
+	"urllink": {
+		"prefix": "urllink",
+		"body": [
+			"[${1}](${1})"
+		],
+		"description": "markdown url link"
+	},
+	"picture": {
+		"prefix": "picture",
+		"body": [
+			"![${1}](${1})"
+		],
+		"description": "markdown picture link"
+	},
+	"codeblock": {
+		"prefix": "codeblock",
+		"body": [
+			"```",
+			"${1}",
+			"```"
+		],
+		"description": "markdown code block"
+	}
+	"code": {
+		"prefix": "code",
+		"body": [
+			"`${1}`"
+		],
+		"description": "markdown code"
+	}
+}
+

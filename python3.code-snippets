@@ -1,0 +1,133 @@
+{
+	"python3_tmp": { //スニペットの名前
+		"scope": "python",
+		"prefix": "python", //スニペットのprefix これだけ打って呼び出せる
+		"body": [ //実際に出力される部分。文字列の配列で宣言
+			"#!/usr/bin/python3",
+			"# -*- coding: utf-8 -*-",
+			"",
+			"import sys",
+			"",
+			"",
+			"def main(args):",
+			"",
+			"    pass",
+			"",
+			"if __name__ == '__main__':",
+			"",
+			"    args = sys.argv",
+			"    if len(args) < 2:",
+			"        print('Usage: ' + args[0] + \"<foobar>\")",
+			"    else:",
+			"        main(args[1:])",
+		],
+		"description": "python3 template" //表示される説明文
+	},
+	"python3_datetime": {
+		"scope": "python",
+		"prefix": "datetime",
+		"body": [
+			"import datetime",
+			"dt = datetime.datetime.now()",
+			"print(dt.strftime('%Y%m%d-%H%M%S'))",
+			"print(dt.strftime('%Y年%m月%d日 %H時%M分%S秒'))",
+			"print(dt.strftime('%A, %B')) # Weekday, Month",
+			"print(dt.strftime('%a, %b')) # Wkdy, Mnth",
+			"",
+			"weeklist = ['月','火','水','木','金','土','日']",
+			"print(weeklist[dt.weekday()])",
+		],
+		"description": "python3 datetime sample"
+	},
+	"python3_pathlib": {
+		"scope": "python",
+		"prefix": "pathlib",
+		"body": [
+			"###",
+			"import os",
+			"import pathlib",
+			"",
+			"# Bool, file or dir exist?",
+			"os.path.exists(tgt)",
+			"pathlib.Path(tgt).exists()",
+			"",
+			"# Bool, dir exist?",
+			"os.path.isdir(tgt)",
+			"pathlib.Path(tgt).is_dir()",
+			"",
+			"#Bool, file exist?",
+			"os.path.isfile(tgt)",
+			"pathlib.Path(tgt).is_file()",
+			"",
+			"#Bool, symbolic link exist?",
+			"os.path.islink(tgt)",
+			"pathlib.Path(tgt).is_symlink()",
+			"",
+			"#Str, get file name",
+			"pathlib.Path(tgt).name # wtih suffix",
+			"pathlib.Path(tgt).stem # without suffix",
+			"",
+			"#Str, get file suffix",
+			"pathlib.Path(tgt).suffix # ex) .tar.gz => '.gz'",
+			"pathlib.Path(tgt).suffixes  # ex) .tar.gz => ['.tar', '.gz']",
+			"",
+			"# make a dir",
+			"import pathlib",
+			"pathlib.Path(tgt).mkdir()",
+			"pathlib.Path(tgt).mkdir(parents=True) # same as: mkdir -p",
+			"",
+			"#remove a dir recursively",
+			"import shutil",
+			"shutil.rmtree(tgt)",
+			"",
+			"import pathlib",
+			"pathlib.Path(tgt).rmdir()",
+		],
+		"description": "python3 pathlib sample"
+	},
+	"python3_fileio": {
+		"scope": "python",
+		"prefix": "fileio",
+		"body": [
+			"tgt_file = 'testfile.txt'",
+			"",
+			"with open(tgt_file, 'w') as f:",
+			"    f.write('test str')",
+			"",
+			"with open(tgt_file, 'r') as f:",
+			"    lines = f.readlines()",
+			"",
+			"for line in lines:",
+			"    print(line)",
+			""
+		],
+		"description": "python3 file io sample"
+	},
+	"python3_re": {
+		"scope": "python",
+		"prefix": "re",
+		"body": [
+			"import re",
+			"",
+			"# re compile",
+			"instr = ${1}",
+			"searchStr = re.compile(r'')",
+			"outstr = searchStr.match(instr)",
+			"print(outstr)",
+			"",
+			"# re sub",
+			"instr = ${1}",
+			"outstr = re.sub(r'from', r'to', instr)",
+		],
+		"description": "python re sample"
+	},
+	"snippet_template": {
+		"scope": "python",
+		"prefix": "snitemp",
+		"body": [
+			"tmp"
+		],
+		"description": "snitemp"
+	}
+}
+
