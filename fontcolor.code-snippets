@@ -16,14 +16,13 @@
     // 	"description": "Log output to console"
     // }
     "today":{
-        "prefix": ["oritatami", "fold", "折り畳み"],
+        "prefix": ["fontcolor", "color", "フォントカラー"],
         "body": [
             "<font color=\"crimson\">",
-            "",
+            "$1",
             "</font>",
-            "",
-            "<!^-- ",
-            "<font size=\"4\" color=\"red\"> -->",
+            "<!-- ",
+            "<font size=\"4\" color=\"red\">",
             "<font color=\"black\">black</font>",
             "<font color=\"gray\">gray</font>",
             "<font color=\"silver\">silver</font>",
@@ -42,6 +41,6 @@
             "<font color=\"maroon\">maroon</font>",
             "-->"
                 ],
-        "description": "html上で折りたたまれるブロック"
+        "description": "フォントカラー"
     }
 }
