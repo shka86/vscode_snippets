@@ -15,7 +15,7 @@
     // 	],
     // 	"description": "Log output to console"
     // }
-    "today":{
+    "kugiri":{
         "prefix": ["kugiri", "split line", "区切り線"],
         "body": ["-----------------------------------"],
         "description": "区切り線の追加"
