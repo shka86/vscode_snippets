@@ -22,7 +22,7 @@
 			"    # -----------------------------------",
 			"    parser.add_argument('--cwd', p.cwd())",
 			"    parser.add_argument('--dt', datetime.datetime.now())",
-			"    parser.add_argument('--now8', dt.strftime('%Y%m%d-%H%M%S'))",
+			"    parser.add_argument('--now8', datetime.datetime.now().strftime('%Y%m%d-%H%M%S'))",
 			"",
 			"",
 			"def main(args):",
