@@ -134,6 +134,23 @@
 		],
 		"description": "python re sample"
 	},
+	"iter_python": {
+		"scope": "python",
+		"prefix": "re",
+		"body": [
+			"fruits = ['Apple', 'Grape', 'Banana', 'Lemon']",
+			"iter_fruits = iter(fruits)",
+			"",
+			"try:",
+			"    fruit = next(iter_fruits)",
+			"    while(fruit):",
+			"        print(fruit)",
+			"        fruit = next(iter_fruits)",
+			"except StopIteration:",
+			"    pass",
+		],
+		"description": "python re sample"
+	},
 	"snippet_template": {
 		"scope": "python",
 		"prefix": "snitemp",
